@@ -1,0 +1,65 @@
+Database:
+  Tipo: SQLITE #Tipos válidos: MYSQL_POOLING, MYSQL_PURO, MONGODB, SQLITE
+  IP: localhost:3306
+  DB: test
+  User: admin
+  Pass: ""
+  Debug: true
+
+Settings:
+  SomAoAbrir: ORB_PICKUP
+
+Mensagens:
+  SemChave: "&cVocê não tem uma chave do tipo $caixa &cpara abrir."
+  GanhouTitle: "&fVocê ganhou &a$item"
+
+Caixas:
+  c1:
+    Nome: "&6Caixa Misteriosa"
+    FogoDeArtificio:
+      Disable: false
+      Tipo: BALL
+      Cor: RED
+      Fade: BLUE
+    Key:
+      Material: TRIPWIRE_HOOK
+      Nome: "&aChave Misteriosa"
+      Lore:
+        - "&7Utilize esta chave para abrir"
+        - "&7uma caixa &6misteriosa&7 e"
+        - "&7ganhe itens exclusivos!"
+        - ""
+        - "&fLocal da Abertura:"
+        - "&7/crates"
+        - ""
+    HologramaOffset: 3
+    Holograma:
+      - "&6&lCAIXA MISTERIOSA"
+      - "&fRaridade: &7Comum"
+      - ""
+      - "&7Clique esquerdo: &fVisualizar itens"
+      - "&7Clique direito: &fAbrir caixa"
+      - "$item:BEACON"
+    Locations: []
+    Items:
+      it1:
+        Chance: 15
+        Material: STONE
+        Comandos: []
+        #Texture: http://textures.minecraft.net/texture/fa8887814578ce7c540d7ab8cc6b2a2e22a7492cc86c65a7e839c887b2ed62 # caso tenha essa propriedade, o item automaticamente ira ser uma skull com a textura setada (pode ser um nick também)
+        Data: 1
+        Quantidade: 16
+        Nome: "&5Nome Legal"
+        Lore:
+          - "&6Lore legal"
+        Enchants:
+          - "DAMAGE_ALL: 10"
+        Glow: false
+      it2:
+        Chance: 10
+        Material: PAPER
+        Nome: "&65.000 de cash"
+        Comandos:
+          - "cash add $player 5000"
+
+#Permissoes: atlascaixasv2.setcrate, atlascaixasv2.setitemscrate, atlascaixasv2.darkeys
